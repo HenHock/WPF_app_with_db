@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="19.2.5.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" Margins="32, 41, 100, 100" PageWidth="850" PageHeight="1100" Version="19.2" DataMember="ShipClassesView" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="2" ControlType="TopMarginBand" Name="TopMargin1" />
+    <Item2 Ref="3" ControlType="BottomMarginBand" Name="BottomMargin1">
+      <Controls>
+        <Item1 Ref="4" ControlType="XRPageInfo" Name="pageInfo2" PageInfo="DateTime" SizeF="313,23" LocationFloat="6, 6" StyleName="PageInfo" />
+        <Item2 Ref="5" ControlType="XRPageInfo" Name="pageInfo1" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="313,23" LocationFloat="331, 6" StyleName="PageInfo" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="6" ControlType="ReportHeaderBand" Name="ReportHeader1" HeightF="60">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRLabel" Name="label1" Text="Отчёт по кораблям" SizeF="638,24.194334" LocationFloat="6, 6" StyleName="Title" />
+      </Controls>
+    </Item3>
+    <Item4 Ref="8" ControlType="GroupHeaderBand" Name="GroupHeader1" GroupUnion="WithFirstDetail" HeightF="28">
+      <Controls>
+        <Item1 Ref="9" ControlType="XRTable" Name="table1" SizeF="777,28" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="10" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="11" ControlType="XRTableCell" Name="tableCell1" Weight="0.13786938631388498" Text="Имя" StyleName="DetailCaption1" Borders="None">
+                  <StylePriority Ref="12" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="13" ControlType="XRTableCell" Name="tableCell2" Weight="0.13555704778605077" Text="Класс" StyleName="DetailCaption1" />
+                <Item3 Ref="14" ControlType="XRTableCell" Name="tableCell3" Weight="0.081123608117246587" Text="Тип класса" StyleName="DetailCaption1" />
+                <Item4 Ref="15" ControlType="XRTableCell" Name="tableCell4" Weight="0.12291874305278019" Text="Страна" StyleName="DetailCaption1" />
+                <Item5 Ref="16" ControlType="XRTableCell" Name="tableCell5" Weight="0.16169521018396743" Text="Количество орудий" TextAlignment="MiddleRight" StyleName="DetailCaption1">
+                  <StylePriority Ref="17" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="18" ControlType="XRTableCell" Name="tableCell6" Weight="0.083289224882970525" Text="Калибр" TextAlignment="MiddleRight" StyleName="DetailCaption1">
+                  <StylePriority Ref="19" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="20" ControlType="XRTableCell" Name="tableCell7" Weight="0.14672316891715645" Text="Водоизмещение" TextAlignment="MiddleRight" StyleName="DetailCaption1">
+                  <StylePriority Ref="21" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="22" ControlType="XRTableCell" Name="tableCell8" Weight="0.13082371638371396" Text="Год спуска" TextAlignment="MiddleRight" StyleName="DetailCaption1">
+                  <StylePriority Ref="23" UseTextAlignment="false" />
+                </Item8>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="24" ControlType="DetailBand" Name="Detail1" HeightF="25">
+      <Controls>
+        <Item1 Ref="25" ControlType="XRTable" Name="table2" SizeF="776.1113,25" LocationFloat="0, 0" OddStyleName="DetailData3_Odd">
+          <Rows>
+            <Item1 Ref="26" ControlType="XRTableRow" Name="tableRow2" Weight="11.5">
+              <Cells>
+                <Item1 Ref="27" ControlType="XRTableCell" Name="tableCell9" Weight="0.13808626894869258" StyleName="DetailData1" Borders="None">
+                  <ExpressionBindings>
+                    <Item1 Ref="28" EventName="BeforePrint" PropertyName="Text" Expression="[Имя]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="29" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="30" ControlType="XRTableCell" Name="tableCell10" Weight="0.13565321488574256" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="31" EventName="BeforePrint" PropertyName="Text" Expression="[Класс]" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="32" ControlType="XRTableCell" Name="tableCell11" Weight="0.084104700449437617" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="33" EventName="BeforePrint" PropertyName="Text" Expression="[Тип класса]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="34" ControlType="XRTableCell" Name="tableCell12" Weight="0.12017126165170002" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="35" EventName="BeforePrint" PropertyName="Text" Expression="[Страна]" />
+                  </ExpressionBindings>
+                </Item4>
+                <Item5 Ref="36" ControlType="XRTableCell" Name="tableCell13" Weight="0.16404843349380743" TextAlignment="MiddleRight" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[Количество орудий]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="38" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="39" ControlType="XRTableCell" Name="tableCell14" Weight="0.08121648766660812" TextAlignment="MiddleRight" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="40" EventName="BeforePrint" PropertyName="Text" Expression="[Калибр]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="41" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="42" ControlType="XRTableCell" Name="tableCell15" Weight="0.14689115431778377" TextAlignment="MiddleRight" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="43" EventName="BeforePrint" PropertyName="Text" Expression="[Водоизмещение]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="44" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="45" ControlType="XRTableCell" Name="tableCell16" Weight="0.12982846684869764" TextAlignment="MiddleRight" StyleName="DetailData1">
+                  <ExpressionBindings>
+                    <Item1 Ref="46" EventName="BeforePrint" PropertyName="Text" Expression="[Год спуска]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="47" UseTextAlignment="false" />
+                </Item8>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item5>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="48" Name="Title" BorderStyle="Inset" Font="Arial, 14.25pt" ForeColor="255,64,70,80" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="49" Name="DetailCaption1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,64,70,80" BackColor="Salmon" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="50" Name="DetailData1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="51" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BackColor="255,243,245,248" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="52" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,64,70,80" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v19.2" Name="sqlDataSource" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZSI+PENvbm5lY3Rpb24gTmFtZT0ibG9jYWxob3N0X1NlYUJhdHRsZV9Db25uZWN0aW9uIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTZWxlY3RRdWVyeSIgTmFtZT0iU2hpcENsYXNzZXNWaWV3Ij48VGFibGVzPjxUYWJsZSBOYW1lPSJTaGlwQ2xhc3Nlc1ZpZXciIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU2hpcENsYXNzZXNWaWV3IiBOYW1lPSLQmNC80Y8iIC8+PENvbHVtbiBUYWJsZT0iU2hpcENsYXNzZXNWaWV3IiBOYW1lPSLQmtC70LDRgdGBIiAvPjxDb2x1bW4gVGFibGU9IlNoaXBDbGFzc2VzVmlldyIgTmFtZT0i0KLQuNC/INC60LvQsNGB0YHQsCIgLz48Q29sdW1uIFRhYmxlPSJTaGlwQ2xhc3Nlc1ZpZXciIE5hbWU9ItCh0YLRgNCw0L3QsCIgLz48Q29sdW1uIFRhYmxlPSJTaGlwQ2xhc3Nlc1ZpZXciIE5hbWU9ItCa0L7Qu9C40YfQtdGB0YLQstC+INC+0YDRg9C00LjQuSIgLz48Q29sdW1uIFRhYmxlPSJTaGlwQ2xhc3Nlc1ZpZXciIE5hbWU9ItCa0LDQu9C40LHRgCIgLz48Q29sdW1uIFRhYmxlPSJTaGlwQ2xhc3Nlc1ZpZXciIE5hbWU9ItCS0L7QtNC+0LjQt9C80LXRidC10L3QuNC1IiAvPjxDb2x1bW4gVGFibGU9IlNoaXBDbGFzc2VzVmlldyIgTmFtZT0i0JPQvtC0INGB0L/Rg9GB0LrQsCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UiPjxWaWV3IE5hbWU9IlNoaXBDbGFzc2VzVmlldyI+PEZpZWxkIE5hbWU9ItCY0LzRjyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLQmtC70LDRgdGBIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ItCi0LjQvyDQutC70LDRgdGB0LAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i0KHRgtGA0LDQvdCwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ItCa0L7Qu9C40YfQtdGB0YLQstC+INC+0YDRg9C00LjQuSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ItCa0LDQu9C40LHRgCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ItCS0L7QtNC+0LjQt9C80LXRidC10L3QuNC1IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0i0JPQvtC0INGB0L/Rg9GB0LrQsCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="AppBD.Report"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppBD"
+        xmlns:dxrud="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesigner"
+        mc:Ignorable="d"
+        Title="Report" Height="450" Width="800">
+    <Grid>
+        <dxrud:ReportDesigner Name="reportDesigner" x:FieldModifier="public"/>
+    </Grid>
+</Window>
